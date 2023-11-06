@@ -13,5 +13,10 @@ namespace KarateSchoolApplication
         {
 
         }
+
+        protected void UserLogin_Authenticate(object sender, AuthenticateEventArgs e)
+        {
+
+        }
     }
 }

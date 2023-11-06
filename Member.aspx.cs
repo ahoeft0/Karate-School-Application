@@ -9,10 +9,9 @@ namespace KarateSchoolApplication
 {
     public partial class Member1 : System.Web.UI.Page
     {
-        protected void ToLogin_Click(object sender, EventArgs e)
+        protected void Page_Load(object sender, EventArgs e)
         {
-            // Redirect the user to Login.aspx
-            Response.Redirect("Login.aspx");
+
         }
     }
 }

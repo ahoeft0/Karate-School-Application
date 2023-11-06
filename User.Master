@@ -18,9 +18,8 @@
 <body>
     <form id="form1" runat="server">
         <div class="wrapper">
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                <header>
-                    <div class="container">
+            <header>
+                <div class="container">
                         <div class="row align-items-center">
                             <div class="col-2">
                                 <i class="fas fa-hand-rock fa-3x"></i>
@@ -33,10 +32,10 @@
                                 <i class="fas fa-book fa-3x"></i>
                             </div>
                         </div>
-                    </div>
-                </header>
+                 </div>
+            </header>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 <div class="content">
-
                     <br />
                     <br />
                     <br />
@@ -59,22 +58,14 @@
                     <br />
                     <br />
                     <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <asp:Button ID="ToLogin" runat="server" Text="Return To Login" CssClass="center-button" Height="68px" OnClick="ToLogin_Click"/>
-                    <br />
-                    <br />
-                    <br />
-
                 </div>
             </asp:ContentPlaceHolder>
         </div>
+
+        <div style="padding-bottom: 25px; background-color: #F5F5F5">
+            <asp:Button ID="ToLogin" runat="server" Text="Return To Login" CssClass="center-button" Height="70px" OnClick="ToLogin_Click" BackColor="#8F91A2" Width="300px"/>
+        </div>
+
         <footer>
             <div class="container">
                 <div class="row">
@@ -92,9 +83,9 @@
                     </div>
                     <div class="col-md-4">
                         <h3>Follow Us</h3>
-                        <a href="#" class="social-icon"><i class="fab fa-facebook fa-3x" style="margin-top: 15px;"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-twitter fa-3x" style="margin-top: 15px; margin-left: 20px; margin-right: 20px;"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-instagram fa-3x" style="margin-top: 15px;"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook fa-3x" style="margin-top: 15px; color: white;"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter fa-3x" style="margin-top: 15px; margin-left: 20px; margin-right: 20px; color: white;"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram fa-3x" style="margin-top: 15px; color: white;"></i></a>
                     </div>
                 </div>
             </div>
