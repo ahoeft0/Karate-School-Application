@@ -17,7 +17,7 @@ namespace KarateSchoolApplication
         protected void ToLogin_Click(object sender, EventArgs e)
         {
             // Redirect the user to Login.aspx
-            Response.Redirect("Login.aspx");
+            Response.Redirect("~/Login.aspx");
         }
     }
 }

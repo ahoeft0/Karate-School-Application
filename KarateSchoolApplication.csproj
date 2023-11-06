@@ -65,35 +65,34 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Administrator.aspx" />
+    <Content Include="Protected_Pages\Administrator.aspx" />
     <Content Include="App_Data\KarateSchool.mdf" />
     <Content Include="App_Data\KarateSchool_log.ldf">
       <DependentUpon>KarateSchool.mdf</DependentUpon>
     </Content>
     <Content Include="Global.asax" />
-    <Content Include="Instructor.aspx" />
+    <Content Include="Protected_Pages\Instructor.aspx" />
     <Content Include="Login.aspx" />
-    <Content Include="Member.aspx" />
-    <Content Include="Script.js" />
+    <Content Include="Protected_Pages\Member.aspx" />
     <Content Include="Styles.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Administrator.aspx.cs">
+    <Compile Include="Protected_Pages\Administrator.aspx.cs">
       <DependentUpon>Administrator.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Administrator.aspx.designer.cs">
+    <Compile Include="Protected_Pages\Administrator.aspx.designer.cs">
       <DependentUpon>Administrator.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Instructor.aspx.cs">
+    <Compile Include="Protected_Pages\Instructor.aspx.cs">
       <DependentUpon>Instructor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Instructor.aspx.designer.cs">
+    <Compile Include="Protected_Pages\Instructor.aspx.designer.cs">
       <DependentUpon>Instructor.aspx</DependentUpon>
     </Compile>
     <Compile Include="KarateSchool.designer.cs">
@@ -108,11 +107,11 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Member.aspx.cs">
+    <Compile Include="Protected_Pages\Member.aspx.cs">
       <DependentUpon>Member.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Member.aspx.designer.cs">
+    <Compile Include="Protected_Pages\Member.aspx.designer.cs">
       <DependentUpon>Member.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -134,6 +133,7 @@
       <DependentUpon>KarateSchool.dbml</DependentUpon>
     </None>
     <Content Include="User.Master" />
+    <Content Include="Protected_Pages\Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

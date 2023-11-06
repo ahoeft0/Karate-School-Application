@@ -17,16 +17,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            
-        </div>
-        <asp:ScriptManager ID="LoginScriptManager" runat="server">
-            <Scripts>
-                <asp:ScriptReference Path="~/Script.js"/>
-            </Scripts>
-        </asp:ScriptManager>
 
-        <asp:Login ID="UserLogin" runat="server" BackColor="#F7F6F3" BorderColor="#E6E2D8" BorderPadding="4" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="1.2em" ForeColor="#333333" OnAuthenticate="UserLogin_Authenticate" Height="305px" Width="697px">
+        <asp:Login ID="UserLogin" runat="server" BackColor="#F7F6F3" BorderColor="#E6E2D8" BorderPadding="4" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="1.2em" ForeColor="#333333" OnAuthenticate="UserLogin_Authenticate" Height="300px" Width="700px">
             <InstructionTextStyle Font-Italic="True" ForeColor="Black" />
             <LoginButtonStyle BackColor="#8F91A2" BorderColor="#CCCCCC" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="1.2em" ForeColor="#000000" />
             <TextBoxStyle Font-Size="1.2em" />
