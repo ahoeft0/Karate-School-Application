@@ -74,6 +74,7 @@
     <Content Include="Instructor.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Member.aspx" />
+    <Content Include="Styles.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
