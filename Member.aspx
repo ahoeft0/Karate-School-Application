@@ -1,28 +1,32 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User.Master" AutoEventWireup="true" CodeBehind="Member.aspx.cs" Inherits="KarateSchoolApplication.Member1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
-    <style type="text/css">
-    .auto-style1 {
-        margin-left: 110px;
-    }
-</style>
-
-</asp:Content>
+    </asp:Content>
 
 <asp:Content ID="Content2" runat="server" contentplaceholderid="ContentPlaceHolder1">
-    <header>
-                    <h1>Karate School</h1>
+                <header>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-2">
+                                <i class="fas fa-hand-rock fa-3x"></i>
+                            </div>
+                            <div class="col-8">
+                                <h1>Karate School</h1>
+                                <p class="lead">Martial Arts Training for All Ages</p>
+                            </div>
+                            <div class="col-2">
+                                <i class="fas fa-book fa-3x"></i>
+                            </div>
+                        </div>
+                    </div>
                 </header>
-<div class="content">
+                <div class="content">
 
                     <br />
-&nbsp;&nbsp;&nbsp;
-                    <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Label ID="Label1" runat="server" Text="Hello {USER}, Your Information:"></asp:Label>
                     <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:GridView ID="GridView2" runat="server" CellPadding="4" CssClass="auto-style1" ForeColor="#333333" GridLines="None" Width="1099px">
+                    <asp:GridView ID="GridView2" runat="server" CellPadding="4" CssClass="auto-style1" ForeColor="#333333" GridLines="None" Width="1099px" style="margin-left: 119px">
                         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                         <EditRowStyle BackColor="#999999" />
                         <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
@@ -64,12 +68,15 @@
                     <br />
                     <br />
                     <br />
+                    <asp:Button ID="ToLogin" runat="server" Text="Return To Login" CssClass="center-button" Height="68px" OnClick="ToLogin_Click"/>
                     <br />
                     <br />
                     <br />
 
                 </div>
             </asp:Content>
+
+
 
 
 
