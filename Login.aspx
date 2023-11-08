@@ -17,7 +17,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <asp:Login ID="UserLogin" runat="server" BackColor="#F7F6F3" BorderColor="#E6E2D8" BorderPadding="4" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="1.2em" ForeColor="#333333" OnAuthenticate="UserLogin_Authenticate" Height="300px" Width="700px" DisplayRememberMe="False" RememberMeText="Remember Me" FailureText="Invalid Login, Please Check User Name &amp; Password">
+        <asp:Login ID="UserLOGIN" runat="server" BackColor="#F7F6F3" BorderColor="#E6E2D8" BorderPadding="4" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="1.2em" ForeColor="#333333" OnAuthenticate="UserLogin_Authenticate" Height="300px" Width="700px" DisplayRememberMe="False" RememberMeText="Remember Me" FailureText="Invalid Login, Please Check User Name &amp; Password">
             <InstructionTextStyle Font-Italic="True" ForeColor="Red" />
             <LoginButtonStyle BackColor="#8F91A2" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="1.2em" ForeColor="#000000" />
             <TextBoxStyle Font-Size="1.2em" />

@@ -45,8 +45,8 @@ namespace KarateSchoolApplication
         protected void UserLogin_Authenticate(object sender, AuthenticateEventArgs e)
         {
             // userName & password variables from UserLogin
-            string userName = UserLogin.UserName;
-            string password = UserLogin.Password;
+            string userName = UserLOGIN.UserName;
+            string password = UserLOGIN.Password;
 
             // KarateSchoolDataContext instance
             KarateSchoolDataContext dataConnection = new KarateSchoolDataContext(connectionString);

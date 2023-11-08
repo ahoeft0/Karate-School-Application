@@ -15,7 +15,7 @@ namespace KarateSchoolApplication
 
         }
 
-        protected void ToLogin_Click(object sender, EventArgs e)
+        protected void ToLoginBTN_Click(object sender, EventArgs e)
         {
             // Redirect the user to Login.aspx
             FormsAuthentication.RedirectToLoginPage();

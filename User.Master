@@ -71,7 +71,7 @@
         </div>
 
         <div style="padding-bottom: 25px; background-color: #F5F5F5">
-            <asp:Button ID="ToLogin" runat="server" Text="Return To Login" CssClass="center-button" Height="70px" OnClick="ToLogin_Click" BackColor="#8F91A2" Width="300px"/>
+            <asp:Button ID="ToLoginBTN" runat="server" Text="Return To Login" CssClass="center-button" Height="70px" OnClick="ToLoginBTN_Click" BackColor="#8F91A2" Width="300px"/>
         </div>
 
         <footer>

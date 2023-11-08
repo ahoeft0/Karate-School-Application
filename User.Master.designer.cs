@@ -42,12 +42,12 @@ namespace KarateSchoolApplication
         protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
 
         /// <summary>
-        /// ToLogin control.
+        /// ToLoginBTN control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ToLogin;
+        protected global::System.Web.UI.WebControls.Button ToLoginBTN;
     }
 }
