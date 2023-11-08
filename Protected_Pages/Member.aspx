@@ -6,12 +6,12 @@
 <asp:Content ID="Content2" runat="server" contentplaceholderid="ContentPlaceHolder1">
                 
                 <div class="content">
-
                     <br />
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Label ID="GreetUserLBL" runat="server" Text="Hello {USER}, Your Information:"></asp:Label>
+                    <asp:LoginName ID="LoginName1" runat="server" />
                     <br />
-                    <asp:GridView ID="UserInfo" runat="server" CellPadding="4" CssClass="auto-style1" ForeColor="#333333" GridLines="None" Width="1099px" style="margin-left: 119px">
+                    <asp:GridView ID="UserInfo" runat="server" CellPadding="4" CssClass="auto-style1" ForeColor="#333333" GridLines="None" Width="1100px" style="margin-left: 120px">
                         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                         <EditRowStyle BackColor="#999999" />
                         <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
@@ -24,6 +24,9 @@
                         <SortedDescendingCellStyle BackColor="#FFFDF8" />
                         <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
                     </asp:GridView>
+                    <br />
+                    <br />
+                    <br />
                     <br />
                     <br />
                     <br />

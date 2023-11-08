@@ -58,6 +58,14 @@
                     <br />
                     <br />
                     <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
                 </div>
             </asp:ContentPlaceHolder>
         </div>
@@ -77,8 +85,8 @@
                         <h3>Contact Information</h3>
                         <p>
                             <i class="fas fa-map-marker"></i> Basement of Barry Hall, 811 2nd Ave N, Fargo, ND 58102<br>
-                            <i class="fas fa-phone"></i> (123) 456-7890<br>
-                            <i class="fas fa-envelope"></i> <a href="mailto:karate.school@gmail.com">karate.school@gmail.com</a>
+                            <i class="fas fa-phone"></i> (701) 866-2946<br>
+                            <i class="fas fa-envelope"></i> <a href="mailto:Karate.School@gmail.com">Karate.School@gmail.com</a>
                         </p>
                     </div>
                     <div class="col-md-4">
