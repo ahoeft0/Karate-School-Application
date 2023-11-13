@@ -18,7 +18,7 @@ namespace KarateSchoolApplication
             KarateSchoolDataContext dataConnection = new KarateSchoolDataContext(connectionString);
 
             // Get UserID (UserID is passed in from Login.aspx)
-            int userID = Convert.ToInt32(Page.User.Identity.Name);
+            int userID = Convert.ToInt32(User.Identity.Name);
 
             // LINQ query to pull FirstName and LastName from Instructors Table based on UserID
             var name = (from item in dataConnection.Instructors
@@ -27,22 +27,22 @@ namespace KarateSchoolApplication
                         {
                             item.InstructorFirstName,
                             item.InstructorLastName
-                        }).FirstOrDefault();
+                        }).First();
 
             // Update GreetUserLBL to show logged user's first & last name
             GreetUserLBL.Text = "Hello " + name.InstructorFirstName + " " + name.InstructorLastName + ", Your Members:";
 
             // LINQ query to pull all records from Sections Table with matching UserID
             var sections = from section in dataConnection.Sections
-                           join member in dataConnection.Members 
-                           on section.Member_ID equals member.Member_UserID
-                           where section.Instructor_ID == userID
-                           select new
-                           {
-                               section = section.SectionName,
-                               firstName = member.MemberFirstName,
-                               lastName = member.MemberLastName
-                           };
+                            join member in dataConnection.Members
+                            on section.Member_ID equals member.Member_UserID
+                            where section.Instructor_ID == userID
+                            select new
+                            {
+                                section = section.SectionName,
+                                firstName = member.MemberFirstName,
+                                lastName = member.MemberLastName
+                            };
 
             // Set MembersGRID's DataSource propery to result of query and bind
             MembersGRID.DataSource = sections;
