@@ -130,6 +130,7 @@
                             </tr>
                         </table>
                         <br />
+                        <asp:TextBox ID="TxtDob" runat="server" Text='<%# Bind("DateofBirth", "{0:yyyy-MM-dd}") %>' TextMode="Date"></asp:TextBox> </EditItemTemplate>
                     </div>
 
                     <br />
