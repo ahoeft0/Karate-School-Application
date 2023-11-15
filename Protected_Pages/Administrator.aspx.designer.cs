@@ -15,40 +15,40 @@ namespace KarateSchoolApplication
     {
 
         /// <summary>
-        /// Label1 control.
+        /// Label31 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label Label31;
 
         /// <summary>
-        /// GridView1 control.
+        /// MemberGridView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.GridView MemberGridView;
 
         /// <summary>
-        /// Label2 control.
+        /// Label32 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label Label32;
 
         /// <summary>
-        /// GridView2 control.
+        /// InstructorGridView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView2;
+        protected global::System.Web.UI.WebControls.GridView InstructorGridView;
 
         /// <summary>
         /// Label24 control.
@@ -69,13 +69,13 @@ namespace KarateSchoolApplication
         protected global::System.Web.UI.WebControls.Label Label3;
 
         /// <summary>
-        /// TextBox1 control.
+        /// MUserNameTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox MUserNameTxt;
 
         /// <summary>
         /// Label4 control.
@@ -87,13 +87,13 @@ namespace KarateSchoolApplication
         protected global::System.Web.UI.WebControls.Label Label4;
 
         /// <summary>
-        /// TextBox2 control.
+        /// MPasswordTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox MPasswordTxt;
 
         /// <summary>
         /// Label5 control.
@@ -105,13 +105,13 @@ namespace KarateSchoolApplication
         protected global::System.Web.UI.WebControls.Label Label5;
 
         /// <summary>
-        /// TextBox3 control.
+        /// MFirstNameTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        protected global::System.Web.UI.WebControls.TextBox MFirstNameTxt;
 
         /// <summary>
         /// Label6 control.
@@ -123,13 +123,13 @@ namespace KarateSchoolApplication
         protected global::System.Web.UI.WebControls.Label Label6;
 
         /// <summary>
-        /// TextBox4 control.
+        /// MLastNameTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox4;
+        protected global::System.Web.UI.WebControls.TextBox MLastNameTxt;
 
         /// <summary>
         /// Label7 control.
@@ -141,13 +141,13 @@ namespace KarateSchoolApplication
         protected global::System.Web.UI.WebControls.Label Label7;
 
         /// <summary>
-        /// TextBox5 control.
+        /// MDateJoinedTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox5;
+        protected global::System.Web.UI.WebControls.TextBox MDateJoinedTxt;
 
         /// <summary>
         /// Label8 control.
@@ -159,13 +159,13 @@ namespace KarateSchoolApplication
         protected global::System.Web.UI.WebControls.Label Label8;
 
         /// <summary>
-        /// TextBox6 control.
+        /// MPhoneNumberTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox6;
+        protected global::System.Web.UI.WebControls.TextBox MPhoneNumberTxt;
 
         /// <summary>
         /// Label9 control.
@@ -177,22 +177,31 @@ namespace KarateSchoolApplication
         protected global::System.Web.UI.WebControls.Label Label9;
 
         /// <summary>
-        /// TextBox7 control.
+        /// MEmailTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox7;
+        protected global::System.Web.UI.WebControls.TextBox MEmailTxt;
 
         /// <summary>
-        /// Button1 control.
+        /// MemberAddButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button MemberAddButton;
+
+        /// <summary>
+        /// MemberDeleteBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button MemberDeleteBtn;
 
         /// <summary>
         /// Label25 control.
@@ -213,13 +222,13 @@ namespace KarateSchoolApplication
         protected global::System.Web.UI.WebControls.Label Label26;
 
         /// <summary>
-        /// TextBox8 control.
+        /// IUserNameTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox8;
+        protected global::System.Web.UI.WebControls.TextBox IUserNameTxt;
 
         /// <summary>
         /// Label27 control.
@@ -231,13 +240,13 @@ namespace KarateSchoolApplication
         protected global::System.Web.UI.WebControls.Label Label27;
 
         /// <summary>
-        /// TextBox9 control.
+        /// IPasswordTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox9;
+        protected global::System.Web.UI.WebControls.TextBox IPasswordTxt;
 
         /// <summary>
         /// Label28 control.
@@ -249,13 +258,13 @@ namespace KarateSchoolApplication
         protected global::System.Web.UI.WebControls.Label Label28;
 
         /// <summary>
-        /// TextBox10 control.
+        /// IFirstNameTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox10;
+        protected global::System.Web.UI.WebControls.TextBox IFirstNameTxt;
 
         /// <summary>
         /// Label29 control.
@@ -267,13 +276,13 @@ namespace KarateSchoolApplication
         protected global::System.Web.UI.WebControls.Label Label29;
 
         /// <summary>
-        /// TextBox11 control.
+        /// ILastNameTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox11;
+        protected global::System.Web.UI.WebControls.TextBox ILastNameTxt;
 
         /// <summary>
         /// Label30 control.
@@ -285,21 +294,30 @@ namespace KarateSchoolApplication
         protected global::System.Web.UI.WebControls.Label Label30;
 
         /// <summary>
-        /// TextBox12 control.
+        /// IPhoneNumberTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox12;
+        protected global::System.Web.UI.WebControls.TextBox IPhoneNumberTxt;
 
         /// <summary>
-        /// Button2 control.
+        /// InstructorAddButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.Button InstructorAddButton;
+
+        /// <summary>
+        /// InstructorDeleteBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button InstructorDeleteBtn;
     }
 }
