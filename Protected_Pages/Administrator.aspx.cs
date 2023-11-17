@@ -270,42 +270,68 @@ namespace KarateSchoolApplication
         /// <param name="e"></param>
         protected void MAddSectionBtn_Click(object sender, EventArgs e)
         {
-            //Select the member to add to section using the selected row in SectionMemberGridView
-            int memberID = Convert.ToInt32(SectionMemberGridView.SelectedValue);
-            Member memberToAdd = (from member in dbcon.Members where member.Member_UserID == memberID select member).Single();
-
-            //Select the section to add the member to using the selected row in SectionGridView
-            int sectionID = Convert.ToInt32(SectionGridView.SelectedValue);
-            Section section = (from s in dbcon.Sections where s.SectionID == sectionID select s).Single();
-
-            //Create new section to add
-            Section sectionToAdd = new Section();
-            sectionToAdd.SectionName = section.SectionName;
-            sectionToAdd.SectionStartDate = section.SectionStartDate;
-            sectionToAdd.Instructor_ID = section.Instructor_ID;
-            sectionToAdd.SectionFee = section.SectionFee;
-            sectionToAdd.Member_ID = memberID;
-
-            //Select duplicate sections
-            var sectionCheck = from sec in dbcon.Sections
-                               where sec.Member_ID == memberID
-                               && sec.SectionName == sectionToAdd.SectionName
-                               && sec.SectionStartDate == sectionToAdd.SectionStartDate
-                               && sec.Instructor_ID == sectionToAdd.Instructor_ID
-                               && sec.SectionFee == sectionToAdd.SectionFee
-                               select sec;
-
-            //If there are no duplicate selections
-            if (sectionCheck.Count() == 0)
+            try
             {
-                //Add the new section to the database
-                dbcon.Sections.InsertOnSubmit(sectionToAdd);
-                dbcon.SubmitChanges();
+                //Select the member to add to section using the selected row in SectionMemberGridView
+                int memberID = Convert.ToInt32(SectionMemberGridView.SelectedValue);
+                Member memberToAdd = (from member in dbcon.Members where member.Member_UserID == memberID select member).Single();
+
+                //Select the section to add the member to using the selected row in SectionGridView
+                int sectionID = Convert.ToInt32(SectionGridView.SelectedValue);
+                Section section = (from s in dbcon.Sections where s.SectionID == sectionID select s).Single();
+
+                //Create new section to add
+                Section sectionToAdd = new Section();
+                sectionToAdd.SectionName = section.SectionName;
+                sectionToAdd.SectionStartDate = section.SectionStartDate;
+                sectionToAdd.Instructor_ID = section.Instructor_ID;
+                sectionToAdd.SectionFee = section.SectionFee;
+                sectionToAdd.Member_ID = memberID;
+
+                //Select duplicate sections
+                var sectionCheck = from sec in dbcon.Sections
+                                   where sec.Member_ID == memberID
+                                   && sec.SectionName == sectionToAdd.SectionName
+                                   && sec.SectionStartDate == sectionToAdd.SectionStartDate
+                                   && sec.Instructor_ID == sectionToAdd.Instructor_ID
+                                   && sec.SectionFee == sectionToAdd.SectionFee
+                                   select sec;
+
+                //If there are no duplicate selections
+                if (sectionCheck.Count() == 0)
+                {
+                    //Add the new section to the database
+                    dbcon.Sections.InsertOnSubmit(sectionToAdd);
+                    dbcon.SubmitChanges();
+                }
+
+                //Select distinct sections from the database
+                var sectionQuery = from distinctSection in dbcon.Sections
+                                   select new
+                                   {
+                                       section.SectionID,
+                                       sectionName = distinctSection.SectionName,
+                                       sectionStartDate = distinctSection.SectionStartDate,
+                                       sectionInstructor = distinctSection.Instructor_ID,
+                                       sectionFee = distinctSection.SectionFee
+                                   };
+
+                //Select only unique sections
+                sectionQuery.GroupBy(x => new { x.sectionInstructor, x.sectionStartDate, x.sectionFee, x.sectionName }).Select(x => x.First());
+
+                //Load selected sections into SectionGridView
+                SectionGridView.DataSource = sectionQuery;
+                SectionGridView.DataBind();
+            }
+            catch (Exception ex)
+            {
+
             }
         }
 
         protected void PageSelectRBTN_SelectedIndexChanged(object sender, EventArgs e)
         {
+            // Radio button selected decides which view to show
             UserMULTI.ActiveViewIndex = PageSelectRBTN.SelectedIndex;
         }
     }

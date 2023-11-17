@@ -36,7 +36,7 @@
                     <div>
                         <asp:Label ID="Label31" runat="server" Font-Bold="True" Font-Underline="True" Text="Members" Font-Size="X-Large"></asp:Label>
                         <br />
-                        <asp:GridView ID="MemberGridView" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Width="570px" DataKeyNames="Member_UserID" AutoGenerateColumns="False">
+                        <asp:GridView ID="MemberGridView" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Width="600px" DataKeyNames="Member_UserID" AutoGenerateColumns="False">
                             <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                             <Columns>
                                 <asp:CommandField ShowSelectButton="True" />
@@ -70,7 +70,7 @@
                         </asp:GridView>
                         <br />
                         <br />
-                        <asp:Button ID="MemberDeleteBtn" runat="server" OnClick="MemberDeleteBtn_Click" Text="Delete" Width="127px" BackColor="#8F91A2" />
+                        <asp:Button ID="MemberDeleteBtn" runat="server" OnClick="MemberDeleteBtn_Click" Text="Delete" Width="170px" BackColor="#8F91A2" Height="80px" />
                         <br />
                         <br />
                     </div>
@@ -87,7 +87,7 @@
                         <br />
                         <asp:Label ID="Label4" runat="server" Text="User Password:"></asp:Label>
                         &nbsp;&nbsp;
-                        <asp:TextBox ID="MPasswordTxt" runat="server" Width="170px"></asp:TextBox>
+                        <asp:TextBox ID="MPasswordTxt" runat="server" Width="145px"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="MPasswordTxt" Display="Dynamic" ErrorMessage="Please enter User Password" ForeColor="Red" ValidationGroup="MemberGroup"></asp:RequiredFieldValidator>
                         <br />
                         <br />
@@ -105,23 +105,25 @@
                         <br />
                         <asp:Label ID="Label7" runat="server" Text="Date Joined:"></asp:Label>
                         &nbsp;&nbsp;
-                        <asp:TextBox ID="MDateJoinedTxt" runat="server" Text='<%# Bind("DateofBirth", "{0:yyyy-MM-dd}") %>' TextMode="Date"></asp:TextBox> </EditItemTemplate>
+                        <asp:TextBox ID="MDateJoinedTxt" runat="server" Text='<%# Bind("DateofBirth", "{0:yyyy-MM-dd}") %>' TextMode="Date" Width="166px"></asp:TextBox> </EditItemTemplate>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="MDateJoinedTxt" Display="Dynamic" ErrorMessage="Please enter Date Joined" ForeColor="Red" ValidationGroup="MemberGroup"></asp:RequiredFieldValidator>
                         <br />
                         <br />
                         <asp:Label ID="Label8" runat="server" Text="Phone Number:"></asp:Label>
                         &nbsp;&nbsp;
-                        <asp:TextBox ID="MPhoneNumberTxt" runat="server" Width="170px"></asp:TextBox>
+                        <asp:TextBox ID="MPhoneNumberTxt" runat="server" Width="148px"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="MPhoneNumberTxt" Display="Dynamic" ErrorMessage="Please enter Phone Number" ForeColor="Red" ValidationGroup="MemberGroup"></asp:RequiredFieldValidator>
                         <br />
                         <br />
                         <asp:Label ID="Label9" runat="server" Text="Email:"></asp:Label>
                         &nbsp;&nbsp;
-                        <asp:TextBox ID="MEmailTxt" runat="server" Width="170px"></asp:TextBox>
+                        <asp:TextBox ID="MEmailTxt" runat="server" Width="216px"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="MEmailTxt" Display="Dynamic" ErrorMessage="Please enter Email" ForeColor="Red" ValidationGroup="MemberGroup"></asp:RequiredFieldValidator>
                         <br />
                         &nbsp;<br />
-                        <asp:Button ID="MemberAddButton" runat="server" OnClick="MemberAddButton_Click" Text="Add" Width="127px" ValidationGroup="MemberGroup" BackColor="#8F91A2" />
+                        <asp:Button ID="MemberAddButton" runat="server" OnClick="MemberAddButton_Click" Text="Add" Width="170px" ValidationGroup="MemberGroup" BackColor="#8F91A2" Height="80px" />
+                        <br />
+                        <br />
                     </div>
                 </div>
             </asp:View>
@@ -161,7 +163,7 @@
                             </asp:GridView>
                             <br />
                             <br />
-                            <asp:Button ID="InstructorDeleteBtn" runat="server" OnClick="InstructorDeleteBtn_Click" Text="Delete" Width="127px" BackColor="#8F91A2" />
+                            <asp:Button ID="InstructorDeleteBtn" runat="server" OnClick="InstructorDeleteBtn_Click" Text="Delete" Width="170px" BackColor="#8F91A2" Height="80px" />
                         </div>
 
                         <div>
@@ -176,7 +178,7 @@
                             <br />
                             <asp:Label ID="Label27" runat="server" Text="User Password:"></asp:Label>
                             &nbsp;&nbsp;
-                            <asp:TextBox ID="IPasswordTxt" runat="server" Width="170px"></asp:TextBox>
+                            <asp:TextBox ID="IPasswordTxt" runat="server" Width="151px"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="IPasswordTxt" Display="Dynamic" ErrorMessage="Please enter User Password" ForeColor="Red" ValidationGroup="InstructorGroup"></asp:RequiredFieldValidator>
                             <br />
                             <br />
@@ -194,11 +196,13 @@
                             <br />
                             <asp:Label ID="Label30" runat="server" Text="Phone Number"></asp:Label>
                             &nbsp;&nbsp;
-                            <asp:TextBox ID="IPhoneNumberTxt" runat="server" Width="170px"></asp:TextBox>
+                            <asp:TextBox ID="IPhoneNumberTxt" runat="server" Width="142px"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ControlToValidate="IPhoneNumberTxt" Display="Dynamic" ErrorMessage="Please enter Phone Number" ForeColor="Red" ValidationGroup="InstructorGroup"></asp:RequiredFieldValidator>
                             <br />
                             <br />
-                            <asp:Button ID="InstructorAddButton" runat="server" OnClick="InstructorAddButton_Click" Text="Add" Width="127px" ValidationGroup="InstructorGroup" BackColor="#8F91A2" />  
+                            <asp:Button ID="InstructorAddButton" runat="server" OnClick="InstructorAddButton_Click" Text="Add" Width="170px" ValidationGroup="InstructorGroup" BackColor="#8F91A2" Height="80px" />  
+                            <br />
+                            <br />
                         </div>
                     </div>
                 </asp:View>
@@ -206,9 +210,9 @@
                 <asp:View ID="SectionVIEW" runat="server">
                     <div>
                         <div>
-                            <asp:Label ID="Label33" runat="server" Font-Bold="True" Font-Underline="True" Text="Members" Font-Size="X-Large"></asp:Label>
+                            <asp:Label ID="Label33" runat="server" Font-Bold="True" Font-Underline="True" Text="Select Member To Add" Font-Size="X-Large"></asp:Label>
                             <br />
-                            <asp:GridView ID="SectionMemberGridView" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Width="425px" DataKeyNames="Member_UserID" AutoGenerateColumns="False">
+                            <asp:GridView ID="SectionMemberGridView" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Width="600px" DataKeyNames="Member_UserID" AutoGenerateColumns="False">
                                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                                 <Columns>
                                     <asp:CommandField ShowSelectButton="True" />
@@ -245,8 +249,9 @@
                         </div>
                         
                         <div>
-                            <asp:Label ID="Label34" runat="server" Font-Bold="True" Font-Underline="True" Text="Sections" Font-Size="X-Large"></asp:Label>
-                            <asp:GridView ID="SectionGridView" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="SectionID" ForeColor="#333333" GridLines="None">
+                            <asp:Label ID="Label34" runat="server" Font-Bold="True" Font-Underline="True" Text="Select Section" Font-Size="X-Large"></asp:Label>
+                            <br />
+                            <asp:GridView ID="SectionGridView" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="SectionID" ForeColor="#333333" GridLines="None" Width="600px">
                                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                                 <Columns>
                                     <asp:CommandField ShowSelectButton="True" />
@@ -257,7 +262,7 @@
                                 </Columns>
                                 <EditRowStyle BackColor="#999999" />
                                 <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
-                                <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                                <HeaderStyle BackColor="#253D5B" Font-Bold="True" ForeColor="White" HorizontalAlign="Center" />
                                 <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
                                 <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
                                 <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
@@ -268,7 +273,9 @@
                             </asp:GridView>
                             <br />
                             <br />
-                            <asp:Button ID="MAddSectionBtn" runat="server" Text="Add to Section" BackColor="#8F91A2" />
+                            <asp:Button ID="MAddSectionBtn" runat="server" Text="Add to Section" BackColor="#8F91A2" Height="80px" OnClick="MAddSectionBtn_Click" Width="170px" />
+                            <br />
+                            <br />
                         </div>
                     </div>
                 </asp:View>
