@@ -246,30 +246,18 @@
                         
                         <div>
                             <asp:Label ID="Label34" runat="server" Font-Bold="True" Font-Underline="True" Text="Sections" Font-Size="X-Large"></asp:Label>
-                            <asp:GridView ID="SectionGridView" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" DataKeyNames="InstructorID" AutoGenerateColumns="False" Width="477px">
+                            <asp:GridView ID="SectionGridView" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="SectionID" ForeColor="#333333" GridLines="None">
                                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                                 <Columns>
                                     <asp:CommandField ShowSelectButton="True" />
-                                    <asp:BoundField DataField="sectionName" HeaderText="Section Name:">
-                                    <HeaderStyle HorizontalAlign="Center" VerticalAlign="Middle" />
-                                    <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
-                                    </asp:BoundField>
-                                    <asp:BoundField DataField="sectionStartDate" HeaderText="Start Date:">
-                                    <HeaderStyle HorizontalAlign="Center" VerticalAlign="Middle" />
-                                    <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
-                                    </asp:BoundField>
-                                    <asp:BoundField DataField="sectionInstructor" HeaderText="Instructor ID:">
-                                    <HeaderStyle HorizontalAlign="Center" VerticalAlign="Middle" />
-                                    <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
-                                    </asp:BoundField>
-                                    <asp:BoundField DataField="sectionFee" HeaderText="Section Fee:">
-                                    <HeaderStyle HorizontalAlign="Center" VerticalAlign="Middle" />
-                                    <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
-                                    </asp:BoundField>
+                                    <asp:BoundField DataField="sectionName" HeaderText="Section Name:" />
+                                    <asp:BoundField DataField="sectionStartDate" HeaderText="Start Date:" />
+                                    <asp:BoundField DataField="sectionInstructor" HeaderText="Instructor ID:" />
+                                    <asp:BoundField DataField="sectionFee" HeaderText="Section Fee:" />
                                 </Columns>
                                 <EditRowStyle BackColor="#999999" />
                                 <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
-                                <HeaderStyle BackColor="#253D5B" Font-Bold="True" ForeColor="White" HorizontalAlign="Center" />
+                                <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
                                 <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
                                 <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
                                 <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
