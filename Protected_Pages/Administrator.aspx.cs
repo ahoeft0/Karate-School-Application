@@ -67,8 +67,10 @@ namespace KarateSchoolApplication
                                    sectionFee = section.SectionFee
                                };
 
+
+
             //Select only unique sections
-            sectionQuery.GroupBy(x => new { x.sectionInstructor, x.sectionStartDate, x.sectionFee, x.sectionName }).Select(x => x.First());
+            sectionQuery = sectionQuery.GroupBy(x => new { x.sectionInstructor, x.sectionStartDate, x.sectionFee, x.sectionName }).Select(x => x.First());
 
             //Load selected sections into SectionGridView
             SectionGridView.DataSource = sectionQuery;
@@ -317,7 +319,7 @@ namespace KarateSchoolApplication
                                    };
 
                 //Select only unique sections
-                sectionQuery.GroupBy(x => new { x.sectionInstructor, x.sectionStartDate, x.sectionFee, x.sectionName }).Select(x => x.First());
+                sectionQuery = sectionQuery.GroupBy(x => new { x.sectionInstructor, x.sectionStartDate, x.sectionFee, x.sectionName }).Select(x => x.First()); 
 
                 //Load selected sections into SectionGridView
                 SectionGridView.DataSource = sectionQuery;
