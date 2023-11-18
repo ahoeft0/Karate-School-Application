@@ -140,6 +140,9 @@ namespace KarateSchoolApplication
         {
             try
             {
+                // Hide error label
+                ErrorLBL1.Visible = false;
+
                 //Select the member to remove using the selected row in MemberGridView
                 int memberID = Convert.ToInt32(MemberGridView.SelectedValue);
                 Member memberToRemove = (from member in dbcon.Members where member.Member_UserID == memberID select member).Single();
@@ -173,7 +176,8 @@ namespace KarateSchoolApplication
             }
             catch (Exception ex)
             {
-
+                // Show error label
+                ErrorLBL1.Visible = true;
             }
         }
 
@@ -229,6 +233,9 @@ namespace KarateSchoolApplication
         {
             try
             {
+                // Hide error label
+                ErrorLBL2.Visible = false;
+
                 //Select the instructor to remove using the selected row in InstructorGridView
                 int instructorID = Convert.ToInt32(InstructorGridView.SelectedValue);
                 Instructor instructorToRemove = (from instructor in dbcon.Instructors where instructor.InstructorID == instructorID select instructor).Single();
@@ -261,7 +268,8 @@ namespace KarateSchoolApplication
             }
             catch (Exception ex)
             {
-
+                // Show error label
+                ErrorLBL2.Visible = true;
             }
         }
 
@@ -274,6 +282,9 @@ namespace KarateSchoolApplication
         {
             try
             {
+                // Hide error label
+                ErrorLBL3.Visible = false;
+
                 //Select the member to add to section using the selected row in SectionMemberGridView
                 int memberID = Convert.ToInt32(SectionMemberGridView.SelectedValue);
                 Member memberToAdd = (from member in dbcon.Members where member.Member_UserID == memberID select member).Single();
@@ -327,7 +338,8 @@ namespace KarateSchoolApplication
             }
             catch (Exception ex)
             {
-
+                // Show error label
+                ErrorLBL3.Visible = true;
             }
         }
 

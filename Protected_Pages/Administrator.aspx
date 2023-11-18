@@ -70,7 +70,10 @@
                         </asp:GridView>
                         <br />
                         <br />
-                        <asp:Button ID="MemberDeleteBtn" runat="server" OnClick="MemberDeleteBtn_Click" Text="Delete" Width="170px" BackColor="#8F91A2" Height="80px" />
+                        <asp:Label ID="ErrorLBL1" runat="server" Font-Size="Large" ForeColor="Red" Text="Please Select a User to Delete" Visible="False"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Button ID="MemberDeleteBtn" runat="server" OnClick="MemberDeleteBtn_Click" Text="Delete" Width="200px" BackColor="#8F91A2" Height="70px" />
                         <br />
                         <br />
                     </div>
@@ -121,7 +124,7 @@
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="MEmailTxt" Display="Dynamic" ErrorMessage="Please enter Email" ForeColor="Red" ValidationGroup="MemberGroup"></asp:RequiredFieldValidator>
                         <br />
                         &nbsp;<br />
-                        <asp:Button ID="MemberAddButton" runat="server" OnClick="MemberAddButton_Click" Text="Add" Width="170px" ValidationGroup="MemberGroup" BackColor="#8F91A2" Height="80px" />
+                        <asp:Button ID="MemberAddButton" runat="server" OnClick="MemberAddButton_Click" Text="Add" Width="200px" ValidationGroup="MemberGroup" BackColor="#8F91A2" Height="70px" />
                         <br />
                         <br />
                     </div>
@@ -163,7 +166,10 @@
                             </asp:GridView>
                             <br />
                             <br />
-                            <asp:Button ID="InstructorDeleteBtn" runat="server" OnClick="InstructorDeleteBtn_Click" Text="Delete" Width="170px" BackColor="#8F91A2" Height="80px" />
+                            <asp:Label ID="ErrorLBL2" runat="server" Font-Size="Large" ForeColor="Red" Text="Please Select a User to Delete" Visible="False"></asp:Label>
+                            <br />
+                            <br />
+                            <asp:Button ID="InstructorDeleteBtn" runat="server" OnClick="InstructorDeleteBtn_Click" Text="Delete" Width="200px" BackColor="#8F91A2" Height="70px" />
                         </div>
 
                         <div>
@@ -178,7 +184,7 @@
                             <br />
                             <asp:Label ID="Label27" runat="server" Text="User Password:"></asp:Label>
                             &nbsp;&nbsp;
-                            <asp:TextBox ID="IPasswordTxt" runat="server" Width="151px"></asp:TextBox>
+                            <asp:TextBox ID="IPasswordTxt" runat="server" Width="146px"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="IPasswordTxt" Display="Dynamic" ErrorMessage="Please enter User Password" ForeColor="Red" ValidationGroup="InstructorGroup"></asp:RequiredFieldValidator>
                             <br />
                             <br />
@@ -200,7 +206,7 @@
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ControlToValidate="IPhoneNumberTxt" Display="Dynamic" ErrorMessage="Please enter Phone Number" ForeColor="Red" ValidationGroup="InstructorGroup"></asp:RequiredFieldValidator>
                             <br />
                             <br />
-                            <asp:Button ID="InstructorAddButton" runat="server" OnClick="InstructorAddButton_Click" Text="Add" Width="170px" ValidationGroup="InstructorGroup" BackColor="#8F91A2" Height="80px" />  
+                            <asp:Button ID="InstructorAddButton" runat="server" OnClick="InstructorAddButton_Click" Text="Add" Width="200px" ValidationGroup="InstructorGroup" BackColor="#8F91A2" Height="70px" />  
                             <br />
                             <br />
                         </div>
@@ -246,6 +252,9 @@
                             </asp:GridView>
                             <br />
                             <br />
+                            <asp:Label ID="ErrorLBL3" runat="server" Font-Size="Large" ForeColor="Red" Text="Please Ensure a Member &amp; Section Are Selected" Visible="False"></asp:Label>
+                            <br />
+                            <br />
                         </div>
                         
                         <div>
@@ -273,7 +282,7 @@
                             </asp:GridView>
                             <br />
                             <br />
-                            <asp:Button ID="MAddSectionBtn" runat="server" Text="Add to Section" BackColor="#8F91A2" Height="80px" OnClick="MAddSectionBtn_Click" Width="170px" />
+                            <asp:Button ID="MAddSectionBtn" runat="server" Text="Add to Section" BackColor="#8F91A2" Height="70px" OnClick="MAddSectionBtn_Click" Width="200px" />
                             <br />
                             <br />
                         </div>

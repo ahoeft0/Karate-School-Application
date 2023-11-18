@@ -60,6 +60,15 @@ namespace KarateSchoolApplication
         protected global::System.Web.UI.WebControls.GridView MemberGridView;
 
         /// <summary>
+        /// ErrorLBL1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ErrorLBL1;
+
+        /// <summary>
         /// MemberDeleteBtn control.
         /// </summary>
         /// <remarks>
@@ -303,6 +312,15 @@ namespace KarateSchoolApplication
         protected global::System.Web.UI.WebControls.GridView InstructorGridView;
 
         /// <summary>
+        /// ErrorLBL2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ErrorLBL2;
+
+        /// <summary>
         /// InstructorDeleteBtn control.
         /// </summary>
         /// <remarks>
@@ -490,6 +508,15 @@ namespace KarateSchoolApplication
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView SectionMemberGridView;
+
+        /// <summary>
+        /// ErrorLBL3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ErrorLBL3;
 
         /// <summary>
         /// Label34 control.
